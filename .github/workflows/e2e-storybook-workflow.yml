@@ -31,5 +31,12 @@ jobs:
         yarn add -D eslint-config-react-app eslint
 
         yarn dlx -p @storybook/cli@next sb init --yes
+
+        # TODO: Remove when fixed upstream
+        yarn config set "packageExtensions['@storybook/preset-create-react-app@*'].peerDependencies.webpack" "*"
+        yarn config set "packageExtensions['@storybook/preset-create-react-app@*'].dependencies['react-refresh']" "*"
+        yarn config set "packageExtensions['@storybook/preset-create-react-app@*'].dependencies['webpack-hot-middleware']" "*"
+        yarn add webpack@^4 @babel/core prop-types
+
         yarn build-storybook
 
