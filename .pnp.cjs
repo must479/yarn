@@ -276,10 +276,22 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@actions/core", [\
-      ["npm:1.2.6", {\
-        "packageLocation": "./.yarn/cache/@actions-core-npm-1.2.6-f205abe96a-034e57fcb5.zip/node_modules/@actions/core/",\
+      ["npm:1.10.0", {\
+        "packageLocation": "./.yarn/cache/@actions-core-npm-1.10.0-6885534582-61bceec8b8.zip/node_modules/@actions/core/",\
         "packageDependencies": [\
-          ["@actions/core", "npm:1.2.6"]\
+          ["@actions/core", "npm:1.10.0"],\
+          ["@actions/http-client", "npm:2.0.1"],\
+          ["uuid", "npm:8.3.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@actions/http-client", [\
+      ["npm:2.0.1", {\
+        "packageLocation": "./.yarn/cache/@actions-http-client-npm-2.0.1-8d69921341-855409b152.zip/node_modules/@actions/http-client/",\
+        "packageDependencies": [\
+          ["@actions/http-client", "npm:2.0.1"],\
+          ["tunnel", "npm:0.0.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -530,7 +542,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@arcanis-sherlock-npm-2.0.3-558f52b79f-286d94b96d.zip/node_modules/@arcanis/sherlock/",\
         "packageDependencies": [\
           ["@arcanis/sherlock", "npm:2.0.3"],\
-          ["@actions/core", "npm:1.2.6"],\
+          ["@actions/core", "npm:1.10.0"],\
           ["@octokit/rest", "npm:16.28.7"],\
           ["clipanion", "npm:2.0.0-rc.16"],\
           ["expect", "npm:24.8.0"],\
